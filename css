@@ -1,0 +1,182 @@
+######################################################################################
+CSS fréquemment utilisé avec le Thème Divi
+######################################################################################
+
+>>> Détail du Fichier <<<
+
+
+2–> Ombre texte
+
+3–> Icone Flèche Bas qui bouge de bas en haut en répétition sur Header Fullwidth
+
+4–> Supprimer le Footer d’origine
+
+5–> Ecriture Fine
+
+6–> Footer Mention
+
+7–> How to Style Any WordPress Theme’s Navigation Menu
+
+8–> How to Create a Divi Overlapping Logo
+
+9–> Customizing Divi’s Secondary Menu Bar with a Call to Action
+
+9 BIS –> Avec Blink CTA
+
+10–> How to Add Social Icons to Divi’s Primary Menu
+
+11–> How to Make Your Divi Navigation Start at the Bottom, Then Stay Fixed at Top When Scrolling
+
+12–> How to Create a Transparent Vertical Navigation That Overlaps Your Divi Website
+
+13–> Ken Burn Effects
+
+14–> 3 Beautiful CSS Hover Effects You Can Add to Your Divi Menus
+
+15–> Fixing Your Responsive Navigation Menu in Divi
+
+16–> How to keep columns on mobile in Divi
+
+17–> Texte avec ICONE FLOTTANT de 30px à GAUCHE du Texte
+
+######################################################################################
+
+
+2–> Ombre texte:
+
+text-shadow: 2px 2px 4px black;
+
+OU
+
+text-shadow: 1px 1px 2px black;
+
+######################################################################################
+
+3–> Icone Flèche Bas qui bouge de bas en haut en répétition sur Header Fullwidth:
+
+.et_pb_fullwidth_header_0 .et_pb_fullwidth_header_scroll a .et-pb-icon {
+animation: bounce 1s infinite alternate;
+-webkit-animation: bounce 1s infinite alternate;
+
+}
+
+@keyframes bounce {
+from {
+transform: translateY(0px);
+}
+to {
+transform: translateY(-15px);
+}
+}
+@-webkit-keyframes bounce {
+from {
+transform: translateY(0px);
+}
+to {
+transform: translateY(-15px);
+}
+}
+
+######################################################################################
+
+4–> Supprimer le Footer d’origine:
+
+#main-footer{
+display:none;}
+
+######################################################################################
+
+5–> Ecriture Fine:
+
+font-weight:300;
+
+######################################################################################
+
+6–> Footer Mention:
+
+© Copyright 2018 – <a href= »# »>www.marketplacesassist.com</a> – Tous droits réservés – <a href= »# »>Mentions légales</a> Conception <a href= »http://www.cookyourcom.fr » target= »_blank »>Cookyourcom</a>
+
+######################################################################################
+
+7–> Personnalisation du menu:
+
+Lien Blog Elegant Theme >>> https://www.elegantthemes.com/blog/tips-tricks/how-to-style-any-wordpress-themes-navigation-menu
+Lien Mega Menu >>> https://wordpress.org/plugins/megamenu/
+
+######################################################################################
+
+8–> Divi Overlapping Logo
+
+Lien >>> https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-divi-overlapping-logo?utm_source=Elegant+Themes&utm_campaign=a55405ffeb-Divi_Daily&utm_medium=email&utm_term=0_c886a2fc0a-a55405ffeb-54043113
+
+######################################################################################
+
+9–> Call to Action sur Secondary Menu Bar
+
+Lien >>> https://www.elegantthemes.com/blog/divi-resources/customizing-divis-secondary-menu-bar-with-a-call-to-action?utm_source=Elegant+Themes&utm_campaign=948648ba15-Divi_Daily&utm_medium=email&utm_term=0_c886a2fc0a-948648ba15-54043113
+
+######################################################################################
+
+9 BIS –> Code CSS à mettre dans DIVI pour que le CTA Clignote (resta à définir la couleur rgba)
+
+/* Pour faire que le CTA Clignote voir le lien suivant => http://www.wifeo.com/code/50-pure-css-pulse-button.html */
+
+.cta a {
+position: relative;
+border: none;
+box-shadow: 0 0 0 0 rgba(250, 255, 44, 0.8);
+border-radius: 50%;
+background-color: #e84c3d;
+padding: 5px 10px;
+background-size:cover;
+background-repeat: no-repeat;
+cursor: pointer;
+-webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+-moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+-ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.cta a:hover
+{
+-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+######################################################################################
+
+10–> https://www.elegantthemes.com/blog/divi-resources/how-to-add-social-icons-to-divis-primary-menu
+
+
+######################################################################################
+
+11–> Barre de navigation en bas, puis quand scroll fait, celle-ci se retrouve en haut
+
+https://www.elegantthemes.com/blog/divi-resources/how-to-make-your-divi-navigation-start-at-the-bottom-then-stay-fixed-at-top-when-scrolling
+
+
+######################################################################################
+
+12–> https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-transparent-vertical-navigation-that-overlaps-your-divi-website?utm_source=Elegant+Themes&utm_campaign=d4720e3092-Divi_Daily&utm_medium=email&utm_term=0_c886a2fc0a-d4720e3092-54043113
+
+
+######################################################################################
+
+14–> https://www.elegantthemes.com/blog/divi-resources/beautiful-css-hover-effects-you-can-add-to-your-divi-menus
+
+
+######################################################################################
+
+15–> https://www.elegantthemes.com/blog/divi-resources/fixing-your-responsive-navigation-menu-in-divi
+
+
+######################################################################################
+
+16–> https://joshhall.co/how-to-keep-columns-on-mobile-in-divi/
+
+
+######################################################################################
+
+17–> HTML & CSS CODE FOR IMAGE FOLAT LEFT ###
+
+<span style= »color: #333333; »><b><img style= »float: left; margin: -3px 5px -5px 0px; » src= »http://www.lapenseebleue.dev-site-web.com/wp-content/uploads/2019/08/Horaire-300x300.png » width= »30″ height= »30″ alt= » » class= »wp-image-92 alignnone size-medium » />De 09H00 à 19H00 </b>du Lundi au Samedi.</span>
